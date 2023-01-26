@@ -21,13 +21,22 @@
     <h1>Iniciando os estudos com DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar DOM em Java script</p>
-    <div>Clique em mim</div>
+    <div id="msg">Clique em mim</div>
 
     <!-- Java Script -->
     <script>
-        var p1 = window.document.getE
-         
-        window.document.write
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write('Esta escrito assim:' +  p1.innerText)
+
+        var d = window.document
+        .getElementById('msg').style.background = 'green'
+        var d = window.document.getElementById('msg').innerText = 'Olá'
+
+        /* SELECTOR 
+        
+        var d = window.document.querySelector('div#msg')
+        
+        */
     </script>
 </body>
 </html>
